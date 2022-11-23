@@ -6,7 +6,7 @@
 
 ## once the session gets to 00:00, the break timer resumes automatically and also counts down.
 
-## Once the break timer gets to 00:00, the session resumes again annd the cycle continues indefinitely. 
+## Once the break timer gets to 00:00, the session resumes again and the cycle continues indefinitely. 
 
 ## Please note that once the timer starts by clicking the start/stop button, you can no longer set the preffered timing again *except* by clicking the reset button.
 
