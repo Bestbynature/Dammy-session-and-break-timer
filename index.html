@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Session and Break Clock | Bestbynature</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/59ba0ac1be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>DIGITAL BREAK AND SESSION TIMER</h1><br><hr><br>
+    </div>
+
+    <div class="clock">
+        <div class="row">
+            <div class="col2" id="break-label"><h2>Break Length</h2><hr></div>
+            <div class="col2" id="session-label"><h2>Session Length</h2><hr></div>
+        </div>
+
+        <div class="row">
+            <div class="col2">
+                <button class="col3" id="break-decrement" onclick="breakDecrement()">&downarrow;</button>
+                <button class="col3" id="break-length">5</button>
+                <button class="col3" id="break-increment" onclick="breakIncrement()">&uparrow;</button>
+            </div>
+
+            <div class="col2">
+                <button class="col3" id="session-decrement" onclick="sessionDecrement()">&downarrow;</button>
+                <button class="col3" id="session-length">25</button>
+                <button class="col3" id="session-increment" onclick="sessionIncrement()">&uparrow;</button>
+            </div>
+        </div><br><br>
+
+        <div class="row">
+            <div class="timer">
+                <div class="title" id="timer-label">Ongoing Session</div>
+                <div class="col3" id="time-left">25:00</div>
+                <!-- <div class="col3">:</div>
+                <div class="col3">00</div><br><br> -->
+            </div>
+        </div><br><br>
+        <audio id="beep"><source src="./drums times 3.mp3" type="audio/wav"></audio>
+
+        <div class="row">
+            <button class="col2 control" id="start_stop">Start/Stop <i class="fa-solid fa-play"></i> <i class="fa-sharp fa-solid fa-pause"></i> </button>
+            <button class="col2 control" id="reset" onclick="reset()">Reset <i class="fa-solid fa-repeat"></i></button>
+        </div>
+
+    </div>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>

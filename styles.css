@@ -1,0 +1,112 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./Texture-web.png);
+}
+
+.header{
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(165, 42, 42, .75);
+}
+
+hr{
+    width: 90%;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clock{
+    width:80%;
+    border: 3px solid black;
+    min-height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(to left, rgb(247, 205, 205), #d492c8);
+}
+
+.clock .row{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clock .row .col2{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.col3{
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 10px;
+    margin: 8px;
+    background-color: rgba(165, 42, 42, .75);
+    color: blanchedalmond;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+.control:hover{
+    color: blanchedalmond;
+    background-color: rgba(165, 42, 42, .75) ;
+    transition: 0.5s ease-in-out;
+}
+
+.col3:hover{
+    color: rgba(165, 42, 42, .75);
+    background-color: blanchedalmond;
+    transition: 0.5s ease-in-out;
+}
+
+.timer{
+    max-width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, rgba(212, 124, 124, .4), rgba(46, 8, 3, .4));
+    border-radius: 20px;
+
+}
+
+.title{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 1.9rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.control{
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: rgb(192, 73, 73);
+    font-weight: bold;
+}
+
+#session-length{
+    font-weight: normal ;
+}
+
+#time-left{
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
